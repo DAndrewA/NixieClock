@@ -1,0 +1,67 @@
+KiCad github workflow
+
+#Basic workflow single person edits from most up to date main branch
+
+
+#Pulls most recent update
+git pull
+
+#creates a new branch
+#A good idea to name the branch something to do with the feature being added
+git checkout -b [new branch name]
+
+~make a change~
+#Save the change and commit
+#Consider writing a macro for this
+#adds edited files to the staging area
+git add .
+#commits the files to the remote repository
+git commit -m "what's been done"
+
+
+#Repeat the above until you reach some sort of milestone
+#Push the changes to the online repository
+git push origin [name of branch]
+
+#After the feature is added, it needs to be merged with the main branch
+#Go to github in your browser and view the compare and pull request
+#give a title and description
+#Assign a reviewer
+#Create pull request
+
+#Review the changes
+#Press review changes button and then do whatever you feel is a good idea
+#comment - ask for clarity
+#Approve - approve the changes
+#Request changes - Thinks there is a problem or changes need making
+
+#Merge
+#confirm merge
+#Delete the branch you have just merged from
+
+#Back into git bash, when you are starting your next new feature, change to main branch, pull, create [newer feature] and repeat process
+
+
+
+
+
+#Creating a to do list
+#Under the issues tab on github browser
+#New issues
+#Fairly self explanatory
+
+
+
+
+#Workflow for collaberative working
+
+#Only have one feature branch at a time
+#Smaller issues that get merged more regularly
+#Name your branch with reference to your issue AND feature
+#If main is updated, consider merging main into your current development branch - use your judgement
+
+#KiCad specific
+#DO NOT WORK ON THE SAME BIT OF WORK AT THE SAME TIME
+#Different pages within a schematic are fine but be careful - If possible, set up as a hierarchical schematic
+
+#LOOK AT COLLABERATIVE LIBRARIES

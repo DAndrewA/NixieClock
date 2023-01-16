@@ -1,0 +1,32 @@
+#Cheat sheet for Git bash
+
+#Pulls from online the latest in the currently selected branch
+git pull
+
+#Tells you status of files in current directory
+#RED means not added to your git add
+#GREEN means not yet commited to the online repository
+git status
+
+#Switch working branch
+git checkout [branch name]
+
+#Adds files to your commit
+#Probably worth googling which wildcards do what, normally you will use "."
+git add [filename.extension OR .]
+
+#Saves changes to local git repository. Treat it like the save command, for every time you hit save,
+#use the command as it makes rolling back more granular
+#Add a message or git shits itself
+git commit -m "[message]"
+
+#Pushes locally saved commits online to named branch (Almost always the branch you are working in)
+git push origin [name of branch]
+
+#Create a new branch
+git branch [New branch name]
+
+#Merge changes from branch A to branch B
+#Current branch needs to be the branch you are merging to [branch B] in this example
+#Only use this for merging the main branch into the [new feature branch] as this command skips the review stage
+git merge [branch being merged from]
